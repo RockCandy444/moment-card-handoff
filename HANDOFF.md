@@ -6,10 +6,11 @@
 
 # 2. 현재 상태
 
-- 작업 저장소: `https://github.com/RockCandy444/moment-card-studio`
+- 과제 5 전용 작업 저장소: `https://github.com/RockCandy444/moment-card-handoff`
+- 기반이 된 과제 3 저장소: `https://github.com/RockCandy444/moment-card-studio` (수정하지 않음)
 - 브랜치: `main`
 - AI A 종료 소스 커밋: `c99dc8296bb00b5434ced48e1175a73313590c9c`
-- 로컬 작업 폴더에서 위 커밋을 확인했다. 원격 고정 URL은 이 커밋을 push한 뒤 `https://github.com/RockCandy444/moment-card-studio/tree/c99dc8296bb00b5434ced48e1175a73313590c9c`가 된다.
+- 로컬 작업 폴더에서 위 커밋을 확인했다. 과제 5 전용 원격 고정 URL은 새 저장소에 push한 뒤 `https://github.com/RockCandy444/moment-card-handoff/tree/c99dc8296bb00b5434ced48e1175a73313590c9c`가 된다.
 - `app.js`에 초안 키 `one-card-draft-v1`, 스키마 버전, 저장 지연 처리, 검증, 복원 로직을 추가했다.
 - 현재 저장·복원되는 값은 `text`, `bg`, `color`, `ratio`다.
 - 브라우저에서 문구 `이어 쓰는 초안`, 화면비 `9:16`, 배경색 `#112233`, 글자색 `#ffeeaa`를 입력하고 새로고침했다. 네 값과 `1080 × 1920 px`, `이 브라우저에 저장된 이전 작업 초안을 복원했습니다.` 안내가 복원되는 것을 확인했다.
@@ -82,8 +83,8 @@ AI A 환경에서는 `node --check app.js`와 `git diff --check`가 통과했고
 # 8. AI B 완료 기록
 
 - AI B 시작 커밋: `c99dc8296bb00b5434ced48e1175a73313590c9c`
-- AI B 종료 커밋: `8b9675bff7776ae600746f94862c2569607d41d8`
-- AI B 작업 시간: 2026-09-21 16:35:11 KST 시작 → 2026-09-21 17:05:00 KST 종료 (약 30분 소요, 상한 60분 이내 준수)
+- AI B 종료 소스 커밋: `b43ef723e3d6c3b8dfabbcf193eb40b841ad2e18`
+- AI B 작업 시간: 33분 (상한 60분 이내 준수)
 - AI B 사용자 작업 요청 수: 2회 (상한 15회 이내 준수)
 - FAIL이 1개 이상 발생한 전체 검사 실행 회차 수: 1회 (브라우저 평가 래퍼 환경 보완 전 1회, 보완 후 10건 전원 PASS)
 - 고정 검사 결과: 10 PASS / 0 FAIL ([`T05_TESTS.md`](./T05_TESTS.md) 전원 통과)
