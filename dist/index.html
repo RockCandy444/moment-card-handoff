@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="대화 없이 저장소와 인수인계 문서만으로 이어진 AI 프로젝트의 공개 비교 보고서">
+  <title>과제 5 · 이어지는 프로젝트</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111a2e'/%3E%3Cpath d='M17 22h21l9 10-9 10H17' fill='none' stroke='%23a9ff68' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="과제 5 보고서 처음으로">T05 <span>HANDOFF LAB</span></a>
+    <nav aria-label="보고서 메뉴">
+      <a href="#comparison">비교</a><a href="#tests">검사</a><a class="demo-link" href="editor.html">결과물 확인</a>
+    </nav>
+  </header>
+  <main>
+    <section class="summary" aria-labelledby="report-title">
+      <div class="summary-copy">
+        <p class="kicker">공개 비교 보고서 · 2026.09.21</p>
+        <h1 id="report-title">대화가 끊겨도<br><span>프로젝트는 이어졌다.</span></h1>
+        <p class="lede">AI A의 대화는 전달하지 않았습니다. 저장소와 일곱 칸 인수인계 문서만 받은 AI B가 남은 기능을 완성하고, 시작 전에 고정한 검사 10개를 그대로 통과했습니다.</p>
+        <div class="actions"><a class="primary" href="editor.html">완성 기능 직접 확인</a><a class="secondary" href="https://github.com/RockCandy444/moment-card-handoff" target="_blank" rel="noreferrer">공개 소스 보기</a></div>
+      </div>
+      <div class="score-card" aria-label="최종 검사 결과">
+        <div class="score"><strong>10</strong><span>/ 10</span></div><p>고정 검사 통과</p>
+        <dl><div><dt>삭제한 검사</dt><dd>0</dd></div><div><dt>완화한 검사</dt><dd>0</dd></div><div><dt>바꾼 기대값</dt><dd>0</dd></div></dl>
+      </div>
+    </section>
+    <section class="sequence" aria-labelledby="sequence-title">
+      <div class="section-heading"><p>작업 기록</p><h2 id="sequence-title">정해진 순서대로 인계했습니다</h2></div>
+      <ol class="timeline">
+        <li><span>01</span><strong>AI A 시작</strong><small>고정 검사 10개·공통 상한 확정</small></li>
+        <li><span>02</span><strong>AI A 인계</strong><small>7 PASS · 3 FAIL에서 계획대로 중단</small></li>
+        <li><span>03</span><strong>AI B 시작</strong><small>저장소와 HANDOFF.md만 전달</small></li>
+        <li><span>04</span><strong>AI B 완료</strong><small>같은 검사 10개 전부 통과</small></li>
+      </ol>
+    </section>
+    <section id="comparison" class="comparison" aria-labelledby="comparison-title">
+      <div class="section-heading"><p>이름을 가린 측정표</p><h2 id="comparison-title">느낌이 아니라 같은 기준으로 비교했습니다</h2></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th scope="col">측정 항목</th><th scope="col">작업 환경 ①</th><th scope="col">작업 환경 ②</th></tr></thead>
+        <tbody><tr><th scope="row">실제 작업시간</th><td>약 4분</td><td>33분</td></tr><tr><th scope="row">사용자 요청 수</th><td>1회</td><td>2회</td></tr><tr><th scope="row">오류 회차</th><td>1회</td><td>1회</td></tr><tr class="emphasis"><th scope="row">고정 검사 통과</th><td>7 / 10</td><td>10 / 10</td></tr></tbody>
+      </table></div>
+      <p class="criterion"><strong>다음 작업의 선택 기준</strong> 현재 상태가 명확하고 작은 구현이면 빠르게 시도하는 도구를, 불확실성과 검증 항목이 많으면 검사와 기록을 꼼꼼히 남기는 도구를 먼저 사용합니다.</p>
+    </section>
+    <section class="handoff-grid" aria-labelledby="handoff-title">
+      <div class="section-heading wide"><p>인수인계 문서</p><h2 id="handoff-title">처음 보는 작업자가 실행할 수 있도록 일곱 칸을 고정했습니다</h2></div>
+      <div class="handoff-card"><span>01</span><strong>목표</strong><p>편집 설정 초안 자동 저장·복원·삭제</p></div>
+      <div class="handoff-card"><span>02</span><strong>현재 상태</strong><p>동작 중인 값, 통과 검사, 종료 커밋</p></div>
+      <div class="handoff-card"><span>03</span><strong>실행 명령</strong><p>새 폴더에서도 같은 화면을 여는 순서</p></div>
+      <div class="handoff-card"><span>04</span><strong>통과 검사</strong><p>AI A 종료 시점 7 PASS / 3 FAIL</p></div>
+      <div class="handoff-card"><span>05</span><strong>남은 문제</strong><p>D04·D05·D09의 미완료 범위</p></div>
+      <div class="handoff-card"><span>06</span><strong>다음 행동</strong><p>첫 실패 검사부터 해결하는 순서</p></div>
+      <div class="handoff-card"><span>07</span><strong>건드리지 말 것</strong><p>검사·템플릿 키·기존 기능 보호</p></div>
+    </section>
+    <section id="tests" class="tests" aria-labelledby="tests-title">
+      <div class="section-heading"><p>고정 검사 10개</p><h2 id="tests-title">입력과 기대값을 바꾸지 않았습니다</h2></div>
+      <div class="test-list">
+        <article><span>D01</span><div><strong>문구 복원</strong><p>새로고침 뒤 입력 문구와 복원 안내 유지</p></div><b>PASS</b></article>
+        <article><span>D02</span><div><strong>화면비 복원</strong><p>9:16과 1080 × 1920 px 유지</p></div><b>PASS</b></article>
+        <article><span>D03</span><div><strong>색상 복원</strong><p>배경색과 글자색을 같은 값으로 복원</p></div><b>PASS</b></article>
+        <article><span>D04</span><div><strong>이미지 조절값 복원</strong><p>확대·가로·세로 위치 유지</p></div><b>PASS</b></article>
+        <article><span>D05</span><div><strong>문구 배치 복원</strong><p>크기·위치·폭·정렬 유지</p></div><b>PASS</b></article>
+        <article><span>D06</span><div><strong>빈 문구 복원</strong><p>기본 문구를 되살리지 않고 빈 값 유지</p></div><b>PASS</b></article>
+        <article><span>D07</span><div><strong>깨진 JSON 방어</strong><p>기본 상태와 오류 안내 유지</p></div><b>PASS</b></article>
+        <article><span>D08</span><div><strong>잘못된 값 방어</strong><p>버전·범위 오류를 부분 적용하지 않음</p></div><b>PASS</b></article>
+        <article><span>D09</span><div><strong>초안 지우기</strong><p>기본값 복원 후 새로고침에도 삭제 유지</p></div><b>PASS</b></article>
+        <article><span>D10</span><div><strong>템플릿 보호</strong><p>초안 변경·복원·삭제와 분리해 보존</p></div><b>PASS</b></article>
+      </div>
+    </section>
+    <section class="evidence" aria-labelledby="evidence-title">
+      <div><p class="kicker">재현·통과 확인 4가지</p><h2 id="evidence-title">3단계 안에서 확인할 수 있습니다</h2></div>
+      <ol><li><span>위치</span><p>상단의 <b>결과물 확인</b>을 눌러 카드 편집기로 이동합니다.</p></li><li><span>행동</span><p>문구나 편집값을 바꾸고 저장 안내를 확인한 뒤 새로고침합니다.</p></li><li><span>통과 모습</span><p>바꾼 값이 그대로 복원되고 이전 작업 초안을 복원했다는 안내가 보입니다.</p></li><li><span>안 될 때</span><p>잘못된 초안이면 기본 편집 상태와 복원할 수 없다는 이유가 보입니다.</p></li></ol>
+    </section>
+    <section class="judgment" aria-labelledby="judgment-title">
+      <div class="section-heading"><p>AI와 내 판단</p><h2 id="judgment-title">역할을 구분했습니다</h2></div>
+      <dl><div><dt>AI에게 맡긴 일</dt><dd>초안 저장·검증·복원·삭제 구현과 고정 검사 실행, 기록 정리.</dd></div><div><dt>직접 판단한 일</dt><dd>과제 3을 기반으로 작은 개선을 고르고, 두 과제를 별도 저장소와 URL로 분리.</dd></div><div><dt>따르지 않은 제안</dt><dd>과제 3의 기존 저장소와 URL을 그대로 덮어쓰는 방식은 기록이 섞이므로 사용하지 않음.</dd></div></dl>
+    </section>
+    <section class="commits" aria-labelledby="commits-title">
+      <div class="section-heading"><p>고정 소스 버전</p><h2 id="commits-title">시작과 종료 지점을 다시 받을 수 있습니다</h2></div>
+      <div class="commit-grid"><a href="https://github.com/RockCandy444/moment-card-handoff/tree/c99dc8296bb00b5434ced48e1175a73313590c9c" target="_blank" rel="noreferrer"><span>AI A 종료 · AI B 시작</span><code>c99dc8296bb…</code></a><a href="https://github.com/RockCandy444/moment-card-handoff/tree/b43ef723e3d6c3b8dfabbcf193eb40b841ad2e18" target="_blank" rel="noreferrer"><span>AI B 종료</span><code>b43ef723e3…</code></a></div>
+      <p>재작업량은 제출 뒤 위 고정 소스 버전 쌍을 기준으로 채점기가 계산합니다.</p>
+    </section>
+  </main>
+  <footer><span>T05 · 대화가 끊겨도 이어지는 프로젝트</span><span>개인정보·비밀값 없음</span></footer>
+</body>
+</html>
