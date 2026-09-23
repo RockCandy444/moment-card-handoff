@@ -44,6 +44,16 @@
         <tbody><tr><th scope="row">실제 작업시간</th><td>약 4분</td><td>33분</td></tr><tr><th scope="row">사용자 요청 수</th><td>1회</td><td>2회</td></tr><tr><th scope="row">오류 회차</th><td>1회</td><td>1회</td></tr><tr class="emphasis"><th scope="row">고정 검사 통과</th><td>7 / 10</td><td>10 / 10</td></tr></tbody>
       </table></div>
       <p class="criterion"><strong>다음 작업의 선택 기준</strong> 현재 상태가 명확하고 작은 구현이면 빠르게 시도하는 도구를, 불확실성과 검증 항목이 많으면 검사와 기록을 꼼꼼히 남기는 도구를 먼저 사용합니다.</p>
+      <div class="measurement-notes" aria-label="비교 조건과 계산 기준">
+        <div><strong>공통 사용 상한</strong><span>각 60분 · 사용자 요청 15회</span></div>
+        <div><strong>오류 회차 정의</strong><span>고정 검사 10개 중 하나 이상 FAIL이 나온 전체 실행을 1회로 계산</span></div>
+      </div>
+      <div class="model-reveal">
+        <p>판정 후 모델 공개</p>
+        <strong>서로 다른 모델 사용 · 확인 완료</strong>
+        <div><span>작업 환경 ① · AI A</span><b>GPT-5.6 Sol</b></div>
+        <div><span>작업 환경 ② · AI B</span><b>Gemini Flash 3.8</b></div>
+      </div>
     </section>
     <section class="handoff-grid" aria-labelledby="handoff-title">
       <div class="section-heading wide"><p>인수인계 문서</p><h2 id="handoff-title">처음 보는 작업자가 실행할 수 있도록 일곱 칸을 고정했습니다</h2></div>
@@ -54,6 +64,10 @@
       <div class="handoff-card"><span>05</span><strong>남은 문제</strong><p>D04·D05·D09의 미완료 범위</p></div>
       <div class="handoff-card"><span>06</span><strong>다음 행동</strong><p>첫 실패 검사부터 해결하는 순서</p></div>
       <div class="handoff-card"><span>07</span><strong>건드리지 말 것</strong><p>검사·템플릿 키·기존 기능 보호</p></div>
+      <div class="integrity-card wide">
+        <strong>인수인계 무결성 확인</strong>
+        <ul><li>인수인계 누락: 없음</li><li>AI A가 남긴 문서와 AI B가 받은 내용: 동일</li><li>문서의 버전 ID와 실제 저장소 버전: 일치</li><li>새 작업 폴더에서 실행 명령 재현: PASS</li></ul>
+      </div>
     </section>
     <section id="tests" class="tests" aria-labelledby="tests-title">
       <div class="section-heading"><p>고정 검사 10개</p><h2 id="tests-title">입력과 기대값을 바꾸지 않았습니다</h2></div>
@@ -80,7 +94,7 @@
     </section>
     <section class="commits" aria-labelledby="commits-title">
       <div class="section-heading"><p>고정 소스 버전</p><h2 id="commits-title">시작과 종료 지점을 다시 받을 수 있습니다</h2></div>
-      <div class="commit-grid"><a href="https://github.com/RockCandy444/moment-card-handoff/tree/c99dc8296bb00b5434ced48e1175a73313590c9c" target="_blank" rel="noreferrer"><span>AI A 종료 · AI B 시작</span><code>c99dc8296bb…</code></a><a href="https://github.com/RockCandy444/moment-card-handoff/tree/b43ef723e3d6c3b8dfabbcf193eb40b841ad2e18" target="_blank" rel="noreferrer"><span>AI B 종료</span><code>b43ef723e3…</code></a></div>
+      <div class="commit-grid"><a href="https://github.com/RockCandy444/moment-card-handoff/tree/bc81e33abf9f2dd7abe44146e6bee08d38fef7b8" target="_blank" rel="noreferrer"><span>AI A 시작</span><code>bc81e33abf…</code></a><a href="https://github.com/RockCandy444/moment-card-handoff/tree/c99dc8296bb00b5434ced48e1175a73313590c9c" target="_blank" rel="noreferrer"><span>AI A 종료</span><code>c99dc8296bb…</code></a><a href="https://github.com/RockCandy444/moment-card-handoff/tree/c99dc8296bb00b5434ced48e1175a73313590c9c" target="_blank" rel="noreferrer"><span>AI B 시작</span><code>c99dc8296bb…</code></a><a href="https://github.com/RockCandy444/moment-card-handoff/tree/b43ef723e3d6c3b8dfabbcf193eb40b841ad2e18" target="_blank" rel="noreferrer"><span>AI B 종료</span><code>b43ef723e3…</code></a></div>
       <p>재작업량은 제출 뒤 위 고정 소스 버전 쌍을 기준으로 채점기가 계산합니다.</p>
     </section>
   </main>
